@@ -6,9 +6,9 @@ describe('[function] takeBanknotes', () => {
     expect(
       takeBanknotes({
         limits: {
+          500: 10,
           5000: 1,
           1000: 5,
-          500: 10,
         },
         amount: 5000,
       })
@@ -26,7 +26,7 @@ describe('[function] takeBanknotes', () => {
           500: 20,
           200: 40,
         },
-        amount: 3420,
+        amount: 8000,
       })
     ).toEqual({
       5000: 1,
@@ -48,7 +48,7 @@ describe('[function] takeBanknotes', () => {
           50: 10,
           10: 10,
         },
-        amount: 3420,
+        amount: 3440,
       })
     ).toEqual({
       2000: 1,
