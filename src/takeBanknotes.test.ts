@@ -2,6 +2,21 @@ import { describe, test, expect } from 'vitest';
 import { takeBanknotes } from './takeBanknotes';
 
 describe('[function] takeBanknotes', () => {
+  test('5000 = 5000x1', () => {
+    expect(
+      takeBanknotes({
+        limits: {
+          5000: 1,
+          1000: 5,
+          500: 10,
+        },
+        amount: 5000,
+      })
+    ).toEqual({
+      5000: 1,
+    });
+  });
+
   test('8000 = 5000 + 2000 + 500x2', () => {
     expect(
       takeBanknotes({
