@@ -1,0 +1,15 @@
+{
+  "npm.packageManager": "yarn",
+  "npm.scriptRunner": "yarn",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": false, // optional
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "off", // optional but recommended
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "vitest.cliArguments": "--configLoader runner",
+}
